@@ -145,9 +145,9 @@ while(WiFi.status()!=WL_CONNECTED and contconexion<50){//hace 50 intentos de con
  }
  if(contconexion<50){
   //para usar con ip fija
-  IPAddress ip(192,168,0,11);
-  IPAddress gateway(192,168,0,1);
-  IPAddress subnet(255,255,255,0);
+  IPAddress ip();
+  IPAddress gateway();
+  IPAddress subnet();
   WiFi.config(ip,gateway,subnet);
 
   Serial.println("");
